@@ -2,14 +2,15 @@
   "name": "fcc-api-projects-boilerplate",
   "version": "0.0.1",
   "description": "An FCC Backend Challenge",
-  "main": "index.js",
+  "main": "index.cjs",
   "scripts": {
-    "start": "node --watch index.js",
+    "start": "node --watch index.cjs",
     "format": "prettier . --write",
-    "lint": "eslint index.js"
+    "lint": "eslint index.cjs"
   },
   "dependencies": {
     "cors": "^2.8.0",
+    "dotenv": "^16.3.1",
     "express": "^4.12.4"
   },
   "repository": {
