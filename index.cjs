@@ -18,7 +18,6 @@ app.get('/', (_, res) => {
   res.sendFile(__dirname + '/views/index.html')
 })
 
-// your first API endpoint...
 app.get('/api/hello', (_, res) => {
   res.json({ greeting: 'hello API' })
 })
@@ -41,7 +40,6 @@ app.get('/api', (_, res) => {
   res.json({ unix: date.getTime(), utc: date.toUTCString() })
 })
 
-// listen for requests :)
 const listener = app.listen(PORT, () => {
   console.log('Your app is listening on port ' + listener.address().port)
 })
