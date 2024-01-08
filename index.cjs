@@ -1,10 +1,9 @@
 const dotenv = require('dotenv')
 const express = require('express')
-const { env } = require('process')
 
 dotenv.config()
 const app = express()
-const PORT = env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC
